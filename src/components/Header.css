@@ -1,0 +1,29 @@
+.navHeader{
+    display: flex;
+    justify-content: space-between;
+    padding:0 10px;
+    align-items: center;
+    background-color:#1b1b1b;
+}
+
+.navHeader *{
+    color: #f8f8f8;
+}
+
+.navHeader nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.navHeader nav a{
+    font-size: medium;
+    font-weight: 500;
+}
+
+@media screen and (min-width:320px){
+    .navHeader *{
+        font-size: small;
+    }
+}

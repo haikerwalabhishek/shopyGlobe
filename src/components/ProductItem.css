@@ -1,0 +1,100 @@
+/* Container for each product item */
+.productItem-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  width: 240px; /* Standard width */
+  height: 350px; /* Standard height */
+  margin: 15px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productItem-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.productItem-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Product title style (smaller for better readability) */
+.productItem-title {
+  font-size: 0.5em; /* Smaller font size for the title */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Price style */
+.productItem-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2d3e50;
+  margin-bottom: 16px;
+}
+
+/* Add to Cart Button style */
+.productItem-addToCartButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.productItem-addToCartButton:hover {
+  background-color: #218838;
+}
+
+/* View Details Link style */
+.productItem-viewDetailsLink {
+  color: #007bff;
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.productItem-viewDetailsLink:hover {
+  color: #0056b3;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .productItem-container {
+    width: 200px; /* Smaller width for mobile screens */
+    height: auto; /* Allow height to be dynamic on small screens */
+  }
+
+  .productItem-title {
+    font-size: 0.9em; /* Slightly smaller title for mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .productItem-container {
+    width: 160px; /* Even smaller width on very small screens */
+  }
+
+  .productItem-title {
+    font-size: 0.85em; /* Smaller title size */
+  }
+}
